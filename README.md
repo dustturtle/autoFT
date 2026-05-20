@@ -142,14 +142,14 @@ The agent needs to understand the entire codebase to make good decisions. 5 file
 
 If you want to understand the system, read these in order:
 
-1. **[`program.md`](program.md)** — The agent's operating manual. Defines the experiment loop, what can and can't be edited, and how results are tracked. Start here to understand the overall flow.
+- **[`program.md`](program.md)** — The agent's operating manual. Defines the experiment loop, what can and can't be edited, and how results are tracked. Start here to understand the overall flow.
 
-2. **[`goal.md`](goal.md)** — An example goal definition (sentiment analysis). Each goal branch gets its own. This is where you define what metric to optimize, where the data lives, and what constraints apply.
+- **[`goal.md`](goal.md)** — An example goal definition (sentiment analysis). Each goal branch gets its own. This is where you define what metric to optimize, where the data lives, and what constraints apply.
 
-3. **[`config.py`](config.py)** — The agent's canvas. Every experiment is a change to this file. It's Python (not YAML), so the agent can define custom eval functions and data formatters inline.
+- **[`config.py`](config.py)** — The agent's canvas. Every experiment is a change to this file. It's Python (not YAML), so the agent can define custom eval functions and data formatters inline.
 
-4. **[`docs/guide.md`](docs/guide.md)** — Full walkthrough of the architecture, data formats, replay buffers, custom evaluation, branching strategy, and hardware requirements.
-5. **[`docs/project-overview.html`](docs/project-overview.html)** — A local visual overview of the core architecture, design ideas, and usage flow.
+- **[`docs/guide.md`](docs/guide.md)** — Full walkthrough of the architecture, data formats, replay buffers, custom evaluation, branching strategy, and hardware requirements.
+- **[`docs/project-overview.html`](docs/project-overview.html)** — A local visual overview of the core architecture, design ideas, and usage flow.
 
 ### Key files to modify
 
