@@ -126,6 +126,7 @@ autofinetune/
 │   Reference:
 ├── docs/
 │   ├── guide.md          Full architecture and usage guide
+│   ├── project-overview.html  Visual architecture/usage overview
 │   └── research/         Research notes on models, fine-tuning approaches
 ├── pyproject.toml        Dependencies
 └── LICENSE               MIT
@@ -148,6 +149,7 @@ If you want to understand the system, read these in order:
 3. **[`config.py`](config.py)** — The agent's canvas. Every experiment is a change to this file. It's Python (not YAML), so the agent can define custom eval functions and data formatters inline.
 
 4. **[`docs/guide.md`](docs/guide.md)** — Full walkthrough of the architecture, data formats, replay buffers, custom evaluation, branching strategy, and hardware requirements.
+5. **[`docs/project-overview.html`](docs/project-overview.html)** — A local visual overview of the core architecture, design ideas, and usage flow.
 
 ### Key files to modify
 
