@@ -38,6 +38,13 @@
     h2 { font-size: 24px; margin-top: 28px; }
     h3 { font-size: 18px; }
     p, li { color: var(--muted); }
+    .subtitle {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 22px;
+      color: var(--accent);
+      font-weight: 600;
+    }
 
     .hero, .section, .card, .file-card, .step, .legend {
       background: rgba(19, 26, 46, 0.92);
@@ -140,14 +147,15 @@
     }
 
     .step:not(:last-child)::after {
-      content: "→";
+      content: "";
       position: absolute;
-      right: -13px;
+      right: -16px;
       top: 50%;
       transform: translateY(-50%);
-      color: var(--accent);
-      font-size: 26px;
-      font-weight: 700;
+      width: 20px;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 999px;
     }
 
     .step .num {
@@ -205,7 +213,7 @@
       <div class="hero-grid">
         <div>
           <span class="pill">autoFT / visual overview</span>
-          <h1>autoFT 项目核心架构与使用方式<br><span style="font-size: 22px; color: var(--accent); font-weight: 600;">autoFT Project Overview: architecture, ideas, and usage</span></h1>
+          <h1>autoFT 项目核心架构与使用方式<br><span class="subtitle" lang="en">autoFT Project Overview: architecture, ideas, and usage</span></h1>
           <p>
             autoFT 是一个“由 AI 代理驱动”的 LoRA 微调工作台。核心不是做一个复杂平台，
             而是把“目标定义 → 配置调整 → 训练评估 → 保留/丢弃”的实验循环固化下来，
@@ -462,7 +470,7 @@
         <li>使用上最重要的动作是：<strong>先把目标说清，再让代理围绕 config.py 持续试验</strong>。</li>
         <li>如果只看一个文件来理解项目，优先读 <code>program.md</code>；如果只看一个可编辑入口，优先看 <code>config.py</code>。</li>
       </ul>
-      <p class="muted">本文件为本地可打开的静态 HTML，总结自仓库中的 README、program.md 和 docs/guide.md。 / This local static HTML summary is based on the repository's README, program.md, and docs/guide.md.</p>
+      <p class="muted">本文件为本地可打开的静态 HTML，总结自仓库中的 README、program.md 和 docs/guide.md。 / <span lang="en">This local static HTML summary is based on the repository's README, program.md, and docs/guide.md.</span></p>
     </section>
   </div>
 </body>
