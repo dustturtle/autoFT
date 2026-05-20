@@ -380,7 +380,7 @@
           <h3>观察结果</h3>
           <ul>
             <li>查看 <code>results.tsv</code></li>
-            <li>检查 <code>adapters/&lt;commit&gt;</code></li>
+            <li>检查 <code>adapters/[commit]</code></li>
             <li>需要部署时执行 merge</li>
           </ul>
         </div>
@@ -412,7 +412,7 @@
           </tr>
           <tr>
             <td>导出可部署模型</td>
-            <td>执行 <code>uv run prepare.py --merge adapters/&lt;best_commit_hash&gt; --output ~/models/my-model</code></td>
+            <td>执行 <code>uv run prepare.py --merge adapters/[best_commit_hash] --output ~/models/my-model</code></td>
             <td>把 LoRA adapter 合并回基础模型</td>
           </tr>
         </tbody>
